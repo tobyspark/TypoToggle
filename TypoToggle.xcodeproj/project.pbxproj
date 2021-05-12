@@ -12,6 +12,7 @@
 		4BA849E4264C72DB0014EFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA849E3264C72DB0014EFDD /* Assets.xcassets */; };
 		4BA849E7264C72DB0014EFDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA849E6264C72DB0014EFDD /* Preview Assets.xcassets */; };
 		4BA849EA264C72DB0014EFDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA849E8264C72DB0014EFDD /* Main.storyboard */; };
+		4BA849F3264C73460014EFDD /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA849F2264C73460014EFDD /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4BA849E9264C72DB0014EFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BA849EB264C72DB0014EFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA849EC264C72DB0014EFDD /* TypoToggle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TypoToggle.entitlements; sourceTree = "<group>"; };
+		4BA849F2264C73460014EFDD /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4BA849EB264C72DB0014EFDD /* Info.plist */,
 				4BA849EC264C72DB0014EFDD /* TypoToggle.entitlements */,
 				4BA849E5264C72DB0014EFDD /* Preview Content */,
+				4BA849F2264C73460014EFDD /* StatusBarController.swift */,
 			);
 			path = TypoToggle;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA849E2264C72DA0014EFDD /* ContentView.swift in Sources */,
+				4BA849F3264C73460014EFDD /* StatusBarController.swift in Sources */,
 				4BA849E0264C72DA0014EFDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +299,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.tobyz.TypoToggle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -319,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.tobyz.TypoToggle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
