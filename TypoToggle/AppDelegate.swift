@@ -13,6 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var statusBar: StatusBarController?
     var popover = NSPopover()
+    
+    let capsLock = CapsLock()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let contentView = ContentView()

@@ -13,6 +13,9 @@
 		4BA849E7264C72DB0014EFDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA849E6264C72DB0014EFDD /* Preview Assets.xcassets */; };
 		4BA849EA264C72DB0014EFDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA849E8264C72DB0014EFDD /* Main.storyboard */; };
 		4BA849F3264C73460014EFDD /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA849F2264C73460014EFDD /* StatusBarController.swift */; };
+		4BA849F8264D55770014EFDD /* CapsLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA849F7264D55770014EFDD /* CapsLock.swift */; };
+		4BA849FB264D67960014EFDD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA849FA264D67960014EFDD /* IOKit.framework */; };
+		4BA849FD264D67A70014EFDD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA849FC264D67A70014EFDD /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		4BA849EB264C72DB0014EFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA849EC264C72DB0014EFDD /* TypoToggle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TypoToggle.entitlements; sourceTree = "<group>"; };
 		4BA849F2264C73460014EFDD /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		4BA849F7264D55770014EFDD /* CapsLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsLock.swift; sourceTree = "<group>"; };
+		4BA849FA264D67960014EFDD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4BA849FC264D67A70014EFDD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA849FD264D67A70014EFDD /* CoreFoundation.framework in Frameworks */,
+				4BA849FB264D67960014EFDD /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,7 @@
 			children = (
 				4BA849DE264C72DA0014EFDD /* TypoToggle */,
 				4BA849DD264C72DA0014EFDD /* Products */,
+				4BA849F9264D67960014EFDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				4BA849DF264C72DA0014EFDD /* AppDelegate.swift */,
+				4BA849F2264C73460014EFDD /* StatusBarController.swift */,
+				4BA849F7264D55770014EFDD /* CapsLock.swift */,
 				4BA849E1264C72DA0014EFDD /* ContentView.swift */,
 				4BA849E3264C72DB0014EFDD /* Assets.xcassets */,
 				4BA849E8264C72DB0014EFDD /* Main.storyboard */,
 				4BA849EB264C72DB0014EFDD /* Info.plist */,
 				4BA849EC264C72DB0014EFDD /* TypoToggle.entitlements */,
 				4BA849E5264C72DB0014EFDD /* Preview Content */,
-				4BA849F2264C73460014EFDD /* StatusBarController.swift */,
 			);
 			path = TypoToggle;
 			sourceTree = "<group>";
@@ -75,6 +85,15 @@
 				4BA849E6264C72DB0014EFDD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BA849F9264D67960014EFDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA849FC264D67A70014EFDD /* CoreFoundation.framework */,
+				4BA849FA264D67960014EFDD /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA849F8264D55770014EFDD /* CapsLock.swift in Sources */,
 				4BA849E2264C72DA0014EFDD /* ContentView.swift in Sources */,
 				4BA849F3264C73460014EFDD /* StatusBarController.swift in Sources */,
 				4BA849E0264C72DA0014EFDD /* AppDelegate.swift in Sources */,
