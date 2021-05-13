@@ -13,6 +13,7 @@ import OSLog
 
 class CapsLock {
     var state = false
+    var handler: (() -> Void)?
     private var manager: IOHIDManager
     
     init() {
@@ -57,6 +58,8 @@ class CapsLock {
             let capsLock = Unmanaged<CapsLock>.fromOpaque(context!).takeUnretainedValue()
             capsLock.state = !capsLock.state
             print("Caps state:", capsLock.state)
+            
+            capsLock.handler?()
         }
     }
 }
